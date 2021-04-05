@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    tools:context=".Oyun2">
+
+    <TextView
+        android:id="@+id/flowerName"
+        android:layout_width="203dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/ek_flower"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="364dp"
+        android:layout_height="373dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText2"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/flower1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/flower9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasedScore"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/flower" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/timeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="29dp"
+        android:text="Süre : 10"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/scoreText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText2"
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="38dp"
+        android:text="Mahsül : 0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timeText2"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
